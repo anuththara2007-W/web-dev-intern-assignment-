@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Kngu | Fresh Flowers</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- Topbar above the nav bar in hero sectio -->
+    <div class="topbar">
+      Free delivery on orders over $75 &nbsp;·&nbsp; Use code
+      <strong>KNGU20</strong> for 20% off your first order
+    </div>
+
+    <!-- nav abr -->
+    <nav>
+      <div class="nav-wrap">
+        <a href="#" class="nav-brand">
+          <img
+            src="https://i.postimg.cc/k4BWmrhz/Screenshot-(1366).png"
+            class="nav-logo"
+            alt="Kngu"
+          />
+          <span class="nav-brand-name"
+            >Kngu<span class="brand-dot">.</span></span
+          >
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#categories">Occasions</a></li>
+          <li><a href="#pages">Pages</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
+          <a href="#" class="nav-icon"><i class="bi bi-person"></i></a>
+          <a href="#" class="nav-icon">
+            <i class="bi bi-bag"></i>
+            <span class="cart-dot"></span>
+          </a>
+
+          <a href="#shop" class="nav-cta">Order Now</a>
+          <button class="burger" id="burger"><i class="bi bi-list"></i></button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section carousel with slider images  -->
+    <div class="hero-carousel" id="heroCarousel">
+      <div class="hero-slides" id="heroSlides">
+        <!-- Slide 1 -->
+        <div class="hero-slide active" id="slide-0">
+          <div
+            class="hero-slide-bg"
+            style="
+              background-image: url(&quot;https://images.pexels.com/photos/4971733/pexels-photo-4971733.jpeg?s=612x612&w=0&k=20&c=91v_INV9G4Q8BQUAU6-g_tCZoWy8m3ZKaVtY5CmM0EE=?q=80&w=1800&auto=format&fit=crop&quot;);
+            "
+          ></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-tag">20% Off For New Members</div>
+            <h1 class="hero-title">Happy<br /><em>Mother's Day!</em></h1>
+            <p class="hero-sub">
+              Bouquets your mom will love hand picked,<br />beautifully wrapped
+              & delivered fresh.
+            </p>
+            <div class="hero-btns">
+              <a href="#shop" class="btn-hero"
+                ><i class="bi bi-bag"></i> Start Shopping</a
+              >
+              <a href="#categories" class="btn-hero-outline"
+                >Browse Occasions</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Slider image  2 -->
+        <div class="hero-slide" id="slide-1">
+          <div
+            class="hero-slide-bg"
+            style="
+              background-image: url(&quot;https://images.pexels.com/photos/19212543/pexels-photo-19212543.jpeg?q=80&w=1800&auto=format&fit=crop&quot;);
+            "
+          ></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-tag">New Collection</div>
+            <h1 class="hero-title">Flowers that<br /><em>say it all</em></h1>
+            <p class="hero-sub">
+              Hand arranged bouquets for every moment <br />birthdays, weddings,
+              or just because.
+            </p>
+            <div class="hero-btns">
+              <a href="#shop" class="btn-hero"
+                ><i class="bi bi-bag"></i> Shop Roses</a
+              >
+              <a href="#categories" class="btn-hero-outline">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slidee imaeg  3 -->
+        <div class="hero-slide" id="slide-2">
+          <div
+            class="hero-slide-bg"
+            style="
+              background-image: url(&quot;https://images.pexels.com/photos/19214045/pexels-photo-19214045.jpeg?q=80&w=1800&auto=format&fit=crop&quot;);
+            "
+          ></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-tag">Wedding Season</div>
+            <h1 class="hero-title">Make your<br /><em>day perfect</em></h1>
+            <p class="hero-sub">
+              Bespoke floral arrangements for weddings,<br />ceremonies and
+              every special occasion.
+            </p>
+            <div class="hero-btns">
+              <a href="#shop" class="btn-hero"
+                ><i class="bi bi-gift"></i> View Collections</a
+              >
+              <a href="#categories" class="btn-hero-outline">Our Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="hero-prev" id="heroPrev">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="hero-next" id="heroNext">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-index="0"></button>
+        <button class="hero-dot" data-index="1"></button>
+        <button class="hero-dot" data-index="2"></button>
+      </div>
+    </div>
+
+    <!-- marquee slider auto  -->
+    <div class="marquee-bar">
+      <div class="marquee-track">
+        <span class="marquee-item">Fresh Roses</span>
+        <span class="marquee-item">Wedding Bouquets</span>
+        <span class="marquee-item">Same Day Delivery</span>
+        <span class="marquee-item">Anniversary Flowers</span>
+        <span class="marquee-item">Seasonal Collections</span>
+        <span class="marquee-item">Gift Wrapping</span>
+        <span class="marquee-item">Luxury Arrangements</span>
+        <span class="marquee-item">Fresh Roses</span>
+        <span class="marquee-item">Wedding Bouquets</span>
+        <span class="marquee-item">Same Day Delivery</span>
+        <span class="marquee-item">Anniversary Flowers</span>
+        <span class="marquee-item">Seasonal Collections</span>
+        <span class="marquee-item">Gift Wrapping</span>
+        <span class="marquee-item">Luxury Arrangements</span>
+      </div>
+    </div>
+
+    <!-- strip after the hero section   -->
+    <div class="trust-strip">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item reveal">
+            <div class="trust-icon"><i class="bi bi-lightning-charge"></i></div>
+            <div class="trust-text">
+              <h6>Free Delivery</h6>
+              <p>Free shipping around the world for all orders over $120</p>
+            </div>
+          </div>
+          <div class="trust-item reveal">
+            <div class="trust-icon"><i class="bi bi-bag-check"></i></div>
+            <div class="trust-text">
+              <h6>Online Order</h6>
+              <p>Dont worry you can order Online by our Site</p>
+            </div>
+          </div>
+          <div class="trust-item reveal">
+            <div class="trust-icon"><i class="bi bi-flower2"></i></div>
+            <div class="trust-text">
+              <h6>Freshness</h6>
+              <p>you have freshness flowers every single order</p>
+            </div>
+          </div>
+          <div class="trust-item reveal">
+            <div class="trust-icon"><i class="bi bi-palette"></i></div>
+            <div class="trust-text">
+              <h6>Made by Artists</h6>
+              <p>world for all made by artists orders over now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- flash sale section -->
+    <div class="flash-bar">
+      <div class="container">
+        <div class="flash-inner">
+          <div class="flash-label">
+            Flash Sale <span>Up to 30% Off</span> New Products
+          </div>
+          <div class="timer">
+            <div class="timer-block">
+              <span class="timer-num" id="timerDays">02</span
+              ><span class="timer-lbl">Days</span>
+            </div>
+            <span class="timer-sep">:</span>
+            <div class="timer-block">
+              <span class="timer-num" id="timerHrs">14</span
+              ><span class="timer-lbl">Hours</span>
+            </div>
+            <span class="timer-sep">:</span>
+            <div class="timer-block">
+              <span class="timer-num" id="timerMin">30</span
+              ><span class="timer-lbl">Mins</span>
+            </div>
+            <span class="timer-sep">:</span>
+            <div class="timer-block">
+              <span class="timer-num" id="timerSec">00</span
+              ><span class="timer-lbl">Secs</span>
+            </div>
+          </div>
+          <a href="#shop" class="flash-cta"
+            >Shop Now <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- new products section -->
+    <section class="section" id="shop">
+      <div class="container">
+        <div style="text-align: center" class="reveal">
+          <div class="section-tag">Fresh Arrivals</div>
+          <h2 class="section-title">New Products</h2>
+          <p class="section-desc" style="margin: 0 auto; text-align: center">
+            A perfect blend of creativity, energy, communication, happiness and
+            love. Let us arrange a smile for you.
+          </p>
+        </div>
+        <div class="filter-row reveal">
+          <button class="filter-btn active">All</button
+          ><button class="filter-btn">Shop</button
+          ><button class="filter-btn">Featured</button
+          ><button class="filter-btn">Best Seller</button>
+        </div>
+        <div class="products-grid reveal">
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/36117537/pexels-photo-36117537.jpeg?q=80&w=800&auto=format&fit=crop',
+                'Pink Rose Bouquet',
+                'Roses',
+                '$45',
+                '$60',
+                'withish pink roses, hand-picked and carefully arranged. A classic choice for anniversaries, birthdays, or just to say you care.',
+                '4.9',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/36117537/pexels-photo-36117537.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Pink Roses"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-hot">Hot</span
+                ><span class="product-badge badge-off">-25%</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Roses</div>
+              <div class="product-name">Spring Snowflake</div>
+              <div class="product-tagline">
+                Classic blush roses, beautifully wrapped
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$45</span
+                  ><span class="price-was">$60</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/30685002/pexels-photo-30685002.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Red Grapport',
+                'Bouquets',
+                '$80',
+                '$100',
+                'A luxurious mix of deep red blooms, perfect for romantic gestures and celebratory moments.',
+                '4.8',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/30685002/pexels-photo-30685002.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Red Bouquet"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-off">-20%</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Bouquets</div>
+              <div class="product-name">Red Grapport</div>
+              <div class="product-tagline">
+                Luxurious deep red blooms arrangement
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$80</span
+                  ><span class="price-was">$100</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/31046048/pexels-photo-31046048.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Scarlet Sage',
+                'Seasonal',
+                '$208',
+                '$260',
+                'Vibrant scarlet blooms paired with lush sage greenery. An artistic arrangement for bold tastes.',
+                '5.0',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/31046048/pexels-photo-31046048.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Scarlet Sage"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-sale">Sale</span
+                ><span class="product-badge badge-off">-20%</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Seasonal</div>
+              <div class="product-name">Scarlet Sage</div>
+              <div class="product-tagline">
+                Bold, artistic arrangement for special moments
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$208</span
+                  ><span class="price-was">$260</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/18840742/pexels-photo-18840742.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Foxglove Flower',
+                'Tulips',
+                '$110',
+                '',
+                'Elegant foxglove in soft lavender tones. A rare and distinguished choice.',
+                '4.7',
+                '★★★★☆',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/18840742/pexels-photo-18840742.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Foxglove"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-new">New</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Tulips</div>
+              <div class="product-name">Foxglove Flower</div>
+              <div class="product-tagline">
+                Elegant lavender tones, uniquely arranged
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$110</span>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 44px" class="reveal">
+          <a
+            href="#"
+            class="nav-cta"
+            style="display: inline-block; padding: 13px 32px; font-size: 13.5px"
+            >View All Flowers <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- valentine offer section  -->
+    <section class="offer-section">
+      <div class="container">
+        <div class="offer-card reveal">
+          <div class="offer-img-side">
+            <img
+              src="https://images.pexels.com/photos/36587391/pexels-photo-36587391.jpeg?q=80&w=1200&auto=format&fit=crop"
+              alt="Valentine"
+            />
+            <div class="offer-float">Limited Time</div>
+          </div>
+          <div class="offer-body">
+            <div class="offer-tag">Surprise Your Valentine!</div>
+            <h2 class="offer-title">
+              Let us arrange<br /><em>a smile for her.</em>
+            </h2>
+            <p class="offer-desc">
+              When flowers are our inspiration to create lasting memories,
+              whatever the occasion inspiration to create lasting memories....
+            </p>
+            <ul class="offer-list">
+              <li>Custom wrapping</li>
+              <li>Suprise gift</li>
+              <li>enjoy more discounts</li>
+            </ul>
+            <div class="offer-btns">
+              <a href="#shop" class="btn-offer"
+                ><i class="bi bi-bag"></i> More Details</a
+              ><a href="#" class="btn-offer-ghost">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- featred items section -->
+    <section class="section" style="padding-top: 10; background: white">
+      <div class="container">
+        <div style="text-align: center" class="reveal">
+          <div class="section-tag">Our Collection</div>
+          <h2 class="section-title">Featured Items</h2>
+          <p class="section-desc" style="text-align: center; margin: 0 auto">
+            A perfect blend of creativity, energy, communication, happiness and
+            love. Let us arrange a smile for you.
+          </p>
+        </div>
+        <div class="filter-row reveal">
+          <button class="filter-btn active">All</button
+          ><button class="filter-btn">Shop</button
+          ><button class="filter-btn">Featured</button
+          ><button class="filter-btn">Best Seller</button>
+        </div>
+        <div class="products-grid reveal">
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/34891883/pexels-photo-34891883.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Lily Majesty Palm',
+                'Lilies',
+                '$90',
+                '$120',
+                'Elegant white lilies paired with majestic palm fronds. Clean, timeless and always in style.',
+                '4.9',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/34891883/pexels-photo-34891883.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Lily"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-off">-25%</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Lilies</div>
+              <div class="product-name">Lily Majesty Palm</div>
+              <div class="product-tagline">
+                Elegant white lilies, timeless grace
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$90</span
+                  ><span class="price-was">$120</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/30319523/pexels-photo-30319523.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Mini Roses',
+                'Roses',
+                '$46',
+                '$60',
+                'Delicate mini roses in soft blush, arranged in a charming and intimate bouquet.',
+                '4.8',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/30319523/pexels-photo-30319523.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Mini Roses"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-off">-23%</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Roses</div>
+              <div class="product-name">Mini Roses</div>
+              <div class="product-tagline">
+                Delicate & charming intimate bouquet
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$46</span
+                  ><span class="price-was">$60</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card tall"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/26933722/pexels-photo-26933722.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Spring Snowflake',
+                'Wedding',
+                '$74',
+                '$90',
+                'A majestic white floral arrangement built for wedding ceremonies. Makes any space feel special and memorable.',
+                '5.0',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/26933722/pexels-photo-26933722.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Spring Snowflake"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-hot">Hot</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Wedding</div>
+              <div class="product-name">Spring Snowflake</div>
+              <div class="product-tagline">
+                Majestic wedding ceremony centerpiece
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$74</span
+                  ><span class="price-was">$90</span>
+                </div>
+                <div class="stars">★★★★★ (5.0 avg)</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/36399725/pexels-photo-36399725.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Red Grapport',
+                'Seasonal',
+                '$90',
+                '',
+                'Vibrant red seasonal arrangement full of warmth and energy for any celebration.',
+                '4.9',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/36399725/pexels-photo-36399725.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Red Grapport"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-sold">Sold Out</span>
+              </div>
+              <div class="sold-overlay"><span>Sold Out</span></div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Seasonal</div>
+              <div class="product-name">Red Grapport</div>
+              <div class="product-tagline">
+                Vibrant warm seasonal arrangement
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="sold-price">Currently unavailable</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/31391575/pexels-photo-31391575.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Sweet Alyssum',
+                'Roses',
+                '$95',
+                '$130',
+                'Sweet-scented alyssum in soft white clusters, perfect for romantic and tender occasions.',
+                '4.8',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/31391575/pexels-photo-31391575.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Sweet Alyssum"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-off">-27%</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Roses</div>
+              <div class="product-name">Sweet Alyssum</div>
+              <div class="product-tagline">
+                Soft white clusters, beautifully fragrant
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$95</span
+                  ><span class="price-was">$130</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/32962809/pexels-photo-32962809.png?q=80&w=1200&auto=format&fit=crop',
+                'Summer Savory',
+                'Tulips',
+                '$80',
+                '$100',
+                'Bold purple summer arrangement with rich tones and a lush, full profile.',
+                '4.7',
+                '★★★★☆',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/32962809/pexels-photo-32962809.png?q=80&w=800&auto=format&fit=crop"
+                alt="Summer Savory"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-sold">Sold Out</span>
+              </div>
+              <div class="sold-overlay"><span>Sold Out</span></div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Tulips</div>
+              <div class="product-name">Summer Savory</div>
+              <div class="product-tagline">
+                Bold purple tones, rich summer arrangement
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="sold-price">Currently unavailable</span>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/29625245/pexels-photo-29625245.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Rock Soapwort',
+                'Bouquets',
+                '$74',
+                '$90',
+                'Cheerful pink rock soapwort blooms in a natural, garden-inspired arrangement.',
+                '4.9',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/29625245/pexels-photo-29625245.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Rock Soapwort"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-off">-18%</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Bouquets</div>
+              <div class="product-name">Rock Soapwort</div>
+              <div class="product-tagline">
+                Natural garden inspired pink blooms
+              </div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$74</span
+                  ><span class="price-was">$90</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-card"
+            onclick="
+              openProduct(
+                'https://images.pexels.com/photos/15290938/pexels-photo-15290938.jpeg?q=80&w=1200&auto=format&fit=crop',
+                'Majesty Palm',
+                'Seasonal',
+                '$110',
+                '',
+                'An exotic statement piece featuring lush majesty palm with tropical accents.',
+                '5.0',
+                '★★★★★',
+              )
+            "
+          >
+            <div class="product-img">
+              <img
+                src="https://images.pexels.com/photos/15290938/pexels-photo-15290938.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Majesty Palm"
+              />
+              <div class="product-badges">
+                <span class="product-badge badge-new">New</span>
+              </div>
+              <div class="product-quick-acts">
+                <button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-heart"></i></button
+                ><button class="qact" onclick="event.stopPropagation()">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Seasonal</div>
+              <div class="product-name">Majesty Palm</div>
+              <div class="product-tagline">Exotic tropical statement piece</div>
+              <div class="product-foot">
+                <div class="price-wrap">
+                  <span class="price-now">$110</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 44px" class="reveal">
+          <a
+            href="#"
+            class="nav-cta"
+            style="display: inline-block; padding: 13px 32px; font-size: 13.5px"
+            >View All Products <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- testonomials with lorem fake text-->
+    <section class="testi-section">
+      <div class="container">
+        <div
+          style="text-align: center; max-width: 560px; margin: 0 auto"
+          class="reveal"
+        >
+          <div class="section-tag">What Customers Say</div>
+          <h2 class="section-title">People love Kngu</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "loved the arrangement of the flowers and they were fresh and
+              vibrant"
+            </p>
+
+            <div class="testi-person">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHTwcEiAigGLqpyhTMdPJh4bLzeysQZxKRAg&s"
+                class="testi-avatar"
+                alt="Emily"
+              />
+              <div>
+                <span class="testi-name">Emily Watson</span
+                ><span class="testi-role">Wedding Client </span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "the flowers are truly beautiful and fresh. They made my wedding
+              day even more special. Highly recommend!"
+            </p>
+            <div class="testi-person">
+              <img
+                src="https://i.pinimg.com/236x/f6/61/ea/f661ea61616909838a9fbfeda0d2ea14.jpg?nii=t"
+                class="testi-avatar"
+                alt="Sophia"
+              />
+              <div>
+                <span class="testi-name">Sophia Lee</span
+                ><span class="testi-role">Regular Customer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "smell of the flowers is amazing and they lasted for a long time.
+              I will definitely be ordering from Kngu again for future
+              occasions!"
+            </p>
+            <div class="testi-person">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-EWleUdkK721XSYFXnPm6C-gMZkgkxGIHQ&s"
+                class="testi-avatar"
+                alt="James"
+              />
+              <div>
+                <span class="testi-name">James Patel</span
+                ><span class="testi-role">Gift Customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experts-section" id="contact">
+      <div class="container">
+        <div style="text-align: center" class="reveal">
+          <div class="section-tag">Our Team</div>
+          <h2 class="section-title">Flower Experts</h2>
+          <p class="section-desc" style="text-align: center; margin: 0 auto">
+            A perfect blend of creativity, energy, communication, happiness and
+            love. Let us arrange a smile for you.
+          </p>
+        </div>
+        <div class="experts-grid">
+          <div class="expert-card reveal">
+            <div class="expert-img-wrap">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHyNWdNrk-axlBGDmB8FSMeHIPkcscG4mNig&s"
+                alt="Maroon"
+              />
+            </div>
+            <div class="expert-name">Marcos Alonso</div>
+            <div class="expert-role">Biologist</div>
+          </div>
+          <div class="expert-card reveal">
+            <div class="expert-img-wrap">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXurfy4vzYH31zrMJwv4Sh7GXzzvcgumF_wA&s"
+                alt="Shara"
+              />
+            </div>
+            <div class="expert-name">Shara friken</div>
+            <div class="expert-role">Photographer</div>
+          </div>
+          <div class="expert-card reveal">
+            <div class="expert-img-wrap">
+              <img
+                src="https://img.magnific.com/free-photo/horizontal-portrait-smiling-happy-young-pleasant-looking-female-wears-denim-shirt-stylish-glasses-with-straight-blonde-hair-expresses-positiveness-poses_176420-13176.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="Yarvi"
+              />
+            </div>
+            <div class="expert-name">Torvi greac</div>
+            <div class="expert-role">Founder</div>
+          </div>
+          <div class="expert-card reveal">
+            <div class="expert-img-wrap">
+              <img
+                src="https://img.freepik.com/free-photo/portrait-young-woman-with-glasses_641386-1015.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="Aimee"
+              />
+            </div>
+            <div class="expert-name">Alonso Gomej</div>
+            <div class="expert-role">Florist</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section" id="blog">
+      <div class="container">
+        <div style="text-align: center" class="reveal">
+          <div class="section-tag">Latest Stories</div>
+          <h2 class="section-title">From Our Blog</h2>
+          <p class="section-desc" style="text-align: center; margin: 0 auto">
+            A perfect blend of creativity, energy, communication, happiness and
+            love. Let us arrange a smile for you.
+          </p>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card reveal">
+            <div class="blog-img">
+              <img
+                src="https://images.pexels.com/photos/31458421/pexels-photo-31458421.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Flower Beauty"
+              />
+            </div>
+            <div class="blog-date">Apr 12, 2025</div>
+            <div class="blog-title">Flower Beauty</div>
+            <p class="blog-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="blog-read"
+              >Continue Reading <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-img">
+              <img
+                src="https://images.pexels.com/photos/13640183/pexels-photo-13640183.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Local Florista"
+              />
+            </div>
+            <div class="blog-date">Apr 28, 2025</div>
+            <div class="blog-title">Local Florista</div>
+            <p class="blog-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="blog-read"
+              >Continue Reading <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-img">
+              <img
+                src="https://images.pexels.com/photos/35282434/pexels-photo-35282434.jpeg?q=80&w=800&auto=format&fit=crop"
+                alt="Flower Power"
+              />
+            </div>
+            <div class="blog-date">May 3, 2025</div>
+            <div class="blog-title">Flower Power</div>
+            <p class="blog-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="blog-read"
+              >Continue Reading <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instagram-section">
+      <div class="container">
+        <div style="text-align: center" class="reveal">
+          <div class="section-tag">Follow Us</div>
+          <h2 class="section-title">Join The Colorful Bunch!</h2>
+          <p
+            class="section-desc"
+            style="text-align: center; margin: 10px auto 0"
+          >
+            Tag us @kngu.flowers for a chance to be featured
+          </p>
+        </div>
+        <div class="insta-grid reveal">
+          <div class="insta-item">
+            <img
+              src="https://images.pexels.com/photos/31458421/pexels-photo-31458421.jpeg?q=80&w=400&auto=format&fit=crop"
+              alt=""
+            />
+            <div class="insta-hover"><i class="bi bi-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.pexels.com/photos/36865668/pexels-photo-36865668.jpeg?q=80&w=400&auto=format&fit=crop"
+              alt=""
+            />
+            <div class="insta-hover"><i class="bi bi-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.pexels.com/photos/35282434/pexels-photo-35282434.jpeg?q=80&w=400&auto=format&fit=crop"
+              alt=""
+            />
+            <div class="insta-hover"><i class="bi bi-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.pexels.com/photos/12385170/pexels-photo-12385170.jpeg?q=80&w=400&auto=format&fit=crop"
+              alt=""
+            />
+            <div class="insta-hover"><i class="bi bi-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.pexels.com/photos/10613086/pexels-photo-10613086.jpeg?q=80&w=400&auto=format&fit=crop"
+              alt=""
+            />
+            <div class="insta-hover"><i class="bi bi-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.pexels.com/photos/36495887/pexels-photo-36495887.jpeg?q=80&w=400&auto=format&fit=crop"
+              alt=""
+            />
+            <div class="insta-hover"><i class="bi bi-instagram"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="section-tag reveal">Stay Connected</div>
+        <h2 class="section-title reveal">
+          Get deals &amp; <em>new arrivals</em>
+        </h2>
+        <p class="reveal">
+          Join 12,000+ flower lovers. We send good stuff no spam.
+        </p>
+        <div class="nl-form reveal">
+          <input
+            type="email"
+            placeholder="Your email address"
+            id="newsletterEmail"
+          /><button id="newsletterBtn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a
+              href="#"
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                margin-bottom: 0;
+              "
+              ><img
+                src="https://i.postimg.cc/k4BWmrhz/Screenshot-(1366).png"
+                style="width: 32px; height: 32px; object-fit: contain"
+                alt="Kngu"
+              /><span class="footer-brand-name-f"
+                >Kngu<span
+                  class="brand-dot"
+                  style="color: var(--rose); font-size: 28px"
+                  >.</span
+                ></span
+              ></a
+            >
+            <p class="footer-tagline">
+              Fresh flowers for every moment. Made with care, delivered with
+              love.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-link"><i class="bi bi-instagram"></i></a
+              ><a href="#" class="social-link"><i class="bi bi-facebook"></i></a
+              ><a href="#" class="social-link"
+                ><i class="bi bi-pinterest"></i></a
+              ><a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Information</div>
+            <ul>
+              <li><a href="#">Search Terms</a></li>
+              <li><a href="#">Advanced Search</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Store Location</a></li>
+              <li><a href="#">Orders & Returns</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">My Account</div>
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Help</div>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Pricing Plans</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Discounts & Returns</a></li>
+              <li><a href="#">Gift Card</a></li>
+              <li><a href="#">Legal Notice</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Customer Service</div>
+            <ul>
+              <li><a href="tel:+94707266991">+94 70 726 6991</a></li>
+              <li><a href="mailto:hello@kngu.com">hello@kngu.com</a></li>
+              <li><a href="#">12 Flower Lane, Colombo 03</a></li>
+              <li><a href="#">Mon–Sat: 8AM – 8PM</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© 2025 Kngu. All rights reserved.</div>
+          <div>
+            Built by
+            <a
+              href="mailto:anuththarawickramasekara424@gmail.com"
+              target="_blank"
+              rel="noopener"
+              >Anuththara Wickramasekara</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal popup cards  -->
+    <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+      <div class="modal-box">
+        <button
+          class="modal-close"
+          onclick="document.getElementById('modal').classList.remove('open')"
+        >
+          <i class="bi bi-x"></i>
+        </button>
+        <img id="modalImg" class="modal-img" src="" alt="" />
+        <div class="modal-info">
+          <div class="modal-cat" id="modalCat"></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <div class="modal-stars" id="modalStars"></div>
+          <div class="modal-price-row">
+            <span class="modal-price" id="modalPrice"></span
+            ><span class="modal-old" id="modalOld"></span>
+          </div>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="size-label">Size</div>
+          <div class="sizes">
+            <button class="size-opt active">Small</button
+            ><button class="size-opt">Medium</button
+            ><button class="size-opt">Large</button
+            ><button class="size-opt">XL Box</button>
+          </div>
+          <div class="modal-actions">
+            <button class="modal-add-btn">
+              <i class="bi bi-bag-plus"></i> Add to Cart</button
+            ><button class="modal-wish-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="modal-perks">
+            <span
+              ><i class="bi bi-lightning-charge" style="color: var(--rose)"></i>
+              Same Day Delivery</span
+            ><span
+              ><i class="bi bi-shield-check" style="color: var(--sage)"></i>
+              Freshness Guaranteed</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="back-top" id="backTop">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
